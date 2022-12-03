@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webview-Activity</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header>
+        <ul>
+            <li><h1>PIZZA DO DIVINO</h1></li>
+            <li><H2>CATEDRAL DO DIVINO ESPÍRITO SANTO</H2></li>
+        </ul>
+    </header>
+
+    <section>
+        <form>
+            <H3>Escolha a pizza que foi vendida</H3>
+
+            <label class="container" for="mussarela">Mussarela
+                <input type="radio" name="radio"  id="mussarela">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" for="mista">Mista
+                <input type="radio" name="radio"  id="mista">
+                <span class="checkmark"></span>
+            </label>
+            <label class="container" for="calabresa">Calabresa
+                <input type="radio" name="radio"  id="calabresa">
+                <span class="checkmark"></span>
+            </label>
+
+
+        </form>
+    </section>
+    <section>
+        <button id="vendas" onclick="venda()">Vendas</button>  <button id="estorno" onclick="estorno()">Estorno</button><br><br>
+    </section>
+
+    <section id="table">
+        <table id="customers">
+            <tr>
+                <th>Sabores</th><th>Quantidades</th><th>Valores</th>
+            </tr>
+            <tr>
+                <td>Mussarela</td><td id="resultadoMussarela"></td><td id="vendaMussarela"></td>
+            </tr>
+            <tr>
+                <td>Mista</td><td id="resultadoMista" ></td><td  id="vendaMista"></td>
+            </tr>
+            <tr>
+                <td>Calabresa</td><td id="resultadoCalabresa"></td><td id="vendaCalabresa"></td>
+            </tr>
+
+        </table>
+    </section>
+    <section>
+        <button  type="button" onclick="javascript:toastMe()">Tabela</button>
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
